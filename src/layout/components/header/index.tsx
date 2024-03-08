@@ -1,17 +1,9 @@
-import { useState } from "react";
-
 import { IconHeart, IconUser, IconShoppingBag, Logo } from "../../../assets";
 import { Search } from "./components/search";
 import { Menu } from "./components/menu";
 import "./header.scss";
 
 const Header = () => {
-  const [activeMenuNavigation, setActiveMenuNavigation] = useState("");
-
-  const changeActiveMenuNavigation = (itemMenu: string) => {
-    setActiveMenuNavigation(itemMenu);
-  };
-
   return (
     <div className="header">
       <div className="header-bar">
@@ -24,37 +16,15 @@ const Header = () => {
             <Search />
           </div>
           <div className="navigation-second-section">
-            <a
-              className={`item-menu-navigation ${
-                activeMenuNavigation === "account"
-                  ? "active-menu-navigation"
-                  : ""
-              }`}
-              onClick={() => changeActiveMenuNavigation("account")}
-              href="#"
-            >
+            <a className="item-menu-navigation" href="#">
               <img src={IconUser} alt="Ver dados da conta" />
               <p>Minha Conta</p>
             </a>
-            <a
-              className={`item-menu-navigation ${
-                activeMenuNavigation === "favorite"
-                  ? "active-menu-navigation"
-                  : ""
-              }`}
-              onClick={() => changeActiveMenuNavigation("favorite")}
-              href="#"
-            >
+            <a className="item-menu-navigation" href="#">
               <img src={IconHeart} alt="Ver produtos favoritos" />
               <p>Favoritos</p>
             </a>
-            <a
-              className={`item-menu-navigation ${
-                activeMenuNavigation === "cart" ? "active-menu-navigation" : ""
-              }`}
-              onClick={() => changeActiveMenuNavigation("cart")}
-              href="#"
-            >
+            <a className="item-menu-navigation" href="#">
               <img src={IconShoppingBag} alt="Ver carrinho" />
               <p>Meu Carrinho</p>
             </a>

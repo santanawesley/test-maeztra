@@ -7,7 +7,7 @@
     font-size: 12px;
     line-height: 18px;
     text-align: left;
-    padding: 11px 24px;
+    padding: 11px 120px 11px 24px;
     border: none;
     outline: none;
     background: #EFEFEF;
@@ -27,5 +27,7 @@
     position: absolute;
     right: 0;
     cursor: pointer;
+    width: 119px;
+    height: 40px;
   }
 }
