@@ -1,0 +1,31 @@
+.search {
+  font-family: Titillium Web;
+  font-weight: 400;
+  letter-spacing: 0px;
+  position: relative;
+  input {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+    padding: 11px 24px;
+    border: none;
+    outline: none;
+    background: #EFEFEF;
+    border-radius: 10px;
+    width: 550px;
+  }
+  button {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    padding: 9px 23px;
+    color: #FFF;
+    background: #FAA500;
+    border-radius: 8px;
+    border: 1px solid #FAA500;
+    outline-color: #EFEFEF;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+  }
+}

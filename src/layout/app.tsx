@@ -1,7 +1,8 @@
 import "./app.scss";
+import { Header } from "./components/header";
 
 function App() {
-  return <p> Maeztria</p>;
+  return <Header />;
 }
 
 export default App;
