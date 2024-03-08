@@ -1,0 +1,31 @@
+.wrapper-footer-bar {
+  background: #353535;
+  .footer-bar {
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: auto;
+    padding: 0 20px;
+    height: 85px;
+    align-items: center;
+    .social-medias, .payment-methods, .credits {
+      gap: 22px;
+      display: flex;
+    }
+    .credits {
+      font-family: Open Sans;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0px;
+      text-align: left;
+      display: flex;
+      .credits-item {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+      }
+    }
+  }
+}
