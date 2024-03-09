@@ -1,0 +1,133 @@
+.wrapper-modal-newsletter {
+  background-color: #000000B2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  .modal-newsletter {
+    width: 851px;
+    height: 558.25px;
+    // po: translate(50%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    // padding: 20px;
+    // border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9;
+    .close-modal {
+      font-family: Lato;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: right;
+      color: #FFF;
+      text-transform: uppercase;
+      padding-bottom: 6px;
+    }
+    .content-modal {
+      background-color: #FFF;
+      display: flex;
+      .img-modal {
+        img {
+          height: 100%;
+        }
+      }
+      .text-modal {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: Titillium Web;
+        letter-spacing: 0px;
+        .title-modal {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: center;
+          color: #464B54;    
+          padding: 13px;      
+          text-transform: uppercase;
+        }
+        .description-modal {
+          font-family: Titillium Web;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 23px;
+          text-align: center;
+          color: #787D83;
+          padding-bottom: 25px;
+
+          // width: 258px
+
+          // font-family: Titillium Web;
+          // font-size: 16px;
+          // font-weight: 700;
+          // line-height: 23px;
+          // letter-spacing: 0px;
+          // text-align: center;
+
+          // font-family: Lato;
+          // font-size: 16px;
+          // font-weight: 700;
+          // line-height: 23px;
+          // letter-spacing: 0px;
+          // text-align: center;
+
+        }
+        .hightligth-description {
+          font-family: Titillium Web;
+          color: #787D83;
+          font-weight: 700;
+        }
+        .wrapper-send-info {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+        .input-mail {
+          height: 42.37px;
+          width: 322px;
+          // height: 40px
+          border-radius: 10px;
+          border: 1px solid #C4C4C4;
+          font-family: Titillium Web;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: left;
+          color: #787D83;
+          padding: 13px;
+          box-sizing: border-box;
+        }
+        .cta-mail {
+          width: 322px;
+          height: 40px;
+          color: #FFF;
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 20px;
+          text-align: left;
+          background-color: #FAA500;
+          border-radius: 10px;
+          border: none;
+          text-align: center;
+          text-transform: uppercase;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+        }
+        .icon-send {
+          width: 12px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}

@@ -25,3 +25,6 @@ export { default as LogoZara } from "./logo-zara.png";
 export { default as ImgInfoCard } from "./img-banner-info-card.png";
 export { default as Img1Showcase } from "./image1-showcase.png";
 export { default as Img2Showcase } from "./image2-showcase.png";
+export { default as ImgNewsletter } from "./img-man-newsletter.png";
+export { default as IconMail } from "./icon-newsletter-mail.svg";
+export { default as IconSend } from "./icon-paper-plane.svg";
