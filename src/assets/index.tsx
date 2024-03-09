@@ -22,3 +22,4 @@ export { default as LogoComma } from "./logo-comma.png";
 export { default as LogoForever } from "./logo-forever.png";
 export { default as LogoMelissa } from "./logo-melissa.png";
 export { default as LogoZara } from "./logo-zara.png";
+export { default as ImgInfoCard } from "./img-banner-info-card.png";

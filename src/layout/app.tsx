@@ -1,4 +1,5 @@
 import "./app.scss";
+import { BannerInfoCard } from "./components/banner-info-card";
 import { Banner } from "./components/banner-main";
 import { Footer } from "./components/footer";
 import { Header } from "./components/header";
@@ -13,6 +14,7 @@ function App() {
       <Banner />
       <TipBar />
       <TipBarBrands />
+      <BannerInfoCard />
       <Newsletter />
       <Footer />
     </>
