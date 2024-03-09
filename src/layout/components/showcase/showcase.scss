@@ -1,0 +1,78 @@
+.wrapper-showcase {
+  padding: 0 20px 80px;
+  .showcase {
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    .titulo-showcase {
+      font-family: Titillium Web;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 49px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #353535;
+      padding-bottom: 24px;
+    }
+    .slick-slider {
+      .slick-track {
+        display: flex;
+        gap: 10px;
+      }
+      .card-showcase {
+        font-family: Titillium Web;
+        font-weight: 400;
+        letter-spacing: 0em;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        .colors-sku {
+          display: flex;
+          gap: 8px;
+          .color-option {
+            width: 27px;
+            height: 27px;
+            border-radius: 4px;
+          }
+        }
+        .value-showcase {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 30px;
+          color: #353535;
+        }
+        .name-showcase {
+          font-size: 16px;
+          line-height: 24px;
+        }
+        .description-showcase {
+          font-size: 12px;
+          line-height: 18px;
+          height: 54px  ;
+        }
+        .cta-showcase {
+          width: 254px;
+          height: 35px;
+          border-radius: 4px;
+          background: #FAA500;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: center;
+          color: #FFFFFF;
+          border: none;
+        }
+      }
+      .slick-arrow {
+        z-index: 1;
+      }
+      .slick-prev {
+        left: 0;
+      }
+      .slick-next {
+        right: 0;
+      }
+    }
+  }
+}

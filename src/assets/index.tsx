@@ -23,3 +23,5 @@ export { default as LogoForever } from "./logo-forever.png";
 export { default as LogoMelissa } from "./logo-melissa.png";
 export { default as LogoZara } from "./logo-zara.png";
 export { default as ImgInfoCard } from "./img-banner-info-card.png";
+export { default as Img1Showcase } from "./image1-showcase.png";
+export { default as Img2Showcase } from "./image2-showcase.png";
