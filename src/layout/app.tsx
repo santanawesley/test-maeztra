@@ -1,5 +1,5 @@
 import "./app.scss";
-import { Banner } from "./components/banner";
+import { Banner } from "./components/banner-main";
 import { Footer } from "./components/footer";
 import { Header } from "./components/header";
 import { Newsletter } from "./components/newsletter";
