@@ -11,3 +11,4 @@ export { default as IconVisa } from "./icon-visa.svg";
 export { default as IconYoutube } from "./icon-youtube.svg";
 export { default as LogoMaeztraWhite } from "./logo-maeztra-white.svg";
 export { default as LogoVtex } from "./logo-vtex.svg";
+export { default as Img1Banner } from "./img-full-banner-1.png";
