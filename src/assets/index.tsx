@@ -17,3 +17,8 @@ export { default as IconExchanges } from "./icon-exchanges.svg";
 export { default as IconGlobe } from "./icon-globe.svg";
 export { default as IconStock } from "./icon-stock.svg";
 export { default as IconTruck } from "./icon-truck.svg";
+export { default as LogoAnnTaylor } from "./logo-ann-taylor.png";
+export { default as LogoComma } from "./logo-comma.png";
+export { default as LogoForever } from "./logo-forever.png";
+export { default as LogoMelissa } from "./logo-melissa.png";
+export { default as LogoZara } from "./logo-zara.png";
