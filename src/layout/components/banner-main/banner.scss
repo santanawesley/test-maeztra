@@ -154,6 +154,10 @@
         margin: 0 8px;
         width: 16px;
         height: 16px;
+        @media(max-width: 480px) {
+          width: 8px;
+          height: 8px;
+        }
       }
       li button {
         width: 16px;
@@ -162,7 +166,9 @@
         border-radius: 50%;
         @media(max-width: 480px) {
           width: 8px;
-          height: 8px;  
+          height: 8px;
+          padding: 0;
+          border: 1px solid #FAA500;
         }
       }
       li.slick-active button {
