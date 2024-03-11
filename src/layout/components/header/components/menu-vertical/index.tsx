@@ -16,37 +16,37 @@ const MenuVertical: React.FC<MenuVerticalProps> = ({ closeMenu }) => {
         <nav>
           <ul className="listagem-menu">
             <li>
-              <a href="#" className="link-menu">
+              <a href="#" className="link-menu" onClick={closeMenu}>
                 Novidades
               </a>
             </li>
             <li>
-              <a href="#" className="link-menu">
+              <a href="#" className="link-menu" onClick={closeMenu}>
                 Vestidos
               </a>
             </li>
             <li>
-              <a href="#" className="link-menu">
+              <a href="#" className="link-menu" onClick={closeMenu}>
                 Roupas
               </a>
             </li>
             <li>
-              <a href="#" className="link-menu">
+              <a href="#" className="link-menu" onClick={closeMenu}>
                 Sapatos
               </a>
             </li>
             <li>
-              <a href="#" className="link-menu">
+              <a href="#" className="link-menu" onClick={closeMenu}>
                 Lingerie
               </a>
             </li>
             <li>
-              <a href="#" className="link-menu">
+              <a href="#" className="link-menu" onClick={closeMenu}>
                 Acessórios
               </a>
             </li>
             <li>
-              <a href="#" className="link-menu">
+              <a href="#" className="link-menu" onClick={closeMenu}>
                 OUTLET
               </a>
             </li>
@@ -57,13 +57,13 @@ const MenuVertical: React.FC<MenuVerticalProps> = ({ closeMenu }) => {
         <nav>
           <ul className="listagem-menu">
             <li>
-              <a href="#" className="link-menu">
+              <a href="#" className="link-menu" onClick={closeMenu}>
                 <img src={IconUserWhite} alt="Novidades" />
                 <div>Minha Conta</div>
               </a>
             </li>
             <li>
-              <a href="#" className="link-menu">
+              <a href="#" className="link-menu" onClick={closeMenu}>
                 <img src={IconHeartWhite} alt="Novidades" />
                 <div>Favoritos</div>
               </a>
