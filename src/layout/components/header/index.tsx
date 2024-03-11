@@ -10,8 +10,16 @@ import {
 import { Search } from "./components/search";
 import { Menu } from "./components/menu";
 import "./header.scss";
+import { MenuVertical } from "./components/menu-vertical";
+import { useState } from "react";
 
 const Header = () => {
+  const [showMenuVertical, setShowMenuVertical] = useState(false);
+
+  const closeMenu = () => {
+    setShowMenuVertical(false);
+  };
+
   return (
     <div className="header">
       <div className="header-bar">
@@ -24,6 +32,7 @@ const Header = () => {
               src={IconMenuDrawer}
               alt="Abrir Menu"
               className="menu-drawer"
+              onClick={() => setShowMenuVertical(true)}
             />
             <img src={Logo} alt="Maeztra" className="logo-header" />
             <Search />
@@ -53,6 +62,7 @@ const Header = () => {
         </div>
       </div>
       <Menu />
+      {showMenuVertical && <MenuVertical closeMenu={closeMenu} />}
     </div>
   );
 };

@@ -1,8 +1,10 @@
 export { default as Logo } from "./logo-maeztra-novo.svg";
-export { default as IconDress } from "./dress.svg";
+export { default as IconDress } from "./icon-dress.svg";
 export { default as IconHeart } from "./icon-heart.svg";
+export { default as IconHeartWhite } from "./icon-heart-white.svg";
 export { default as IconShoppingBag } from "./icon-shopping-bag.svg";
 export { default as IconUser } from "./icon-user.svg";
+export { default as IconUserWhite } from "./icon-user-white.svg";
 export { default as IconFacebook } from "./icon-facebook.svg";
 export { default as IconInstagram } from "./icon-instagram.svg";
 export { default as IconLinkedin } from "./icon-linkedin.svg";

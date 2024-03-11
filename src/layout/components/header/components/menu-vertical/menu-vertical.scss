@@ -1,0 +1,45 @@
+.menu-vertical {
+  color: #FFF;
+  padding: 30px 15px 15px 30px;
+  background-color: #353535;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  width: 95%;
+  .title-menu-vertical {
+    font-family: Titillium Web;
+    padding-bottom: 25px;
+  }
+  .close-menu {
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+  .listagem-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    li {
+      list-style: none;
+    }
+  }
+  .link-menu {
+    font-family: Titillium Web;
+    color: #FFF;
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .menu-usuario {
+    border-top: 2px solid #FFF;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+}
