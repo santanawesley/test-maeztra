@@ -11,7 +11,7 @@ const Menu = () => {
   };
 
   return (
-    <nav>
+    <nav className="nav-listagem-menu">
       <ul className="listagem-menu">
         <li onClick={() => changeActiveMenu("novidades")}>
           <a

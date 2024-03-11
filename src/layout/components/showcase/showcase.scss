@@ -1,5 +1,8 @@
 .wrapper-showcase {
-  padding: 0 20px 80px;
+  padding-bottom: 80px;
+  @media(max-width: 767px) {
+    padding-bottom: 23px;
+  }
   .showcase {
     max-width: 1600px;
     margin: auto;
@@ -14,11 +17,15 @@
       text-align: center;
       color: #353535;
       padding-bottom: 24px;
+      @media(max-width: 767px) {
+        font-size: 24px;
+        line-height: 37px;
+        padding-bottom: 16px;
+      }
     }
     .slick-slider {
       .slick-track {
         display: flex;
-        gap: 10px;
       }
       .card-showcase {
         font-family: Titillium Web;
@@ -27,14 +34,23 @@
         text-align: left;
         display: flex;
         flex-direction: column;
+        padding: 0 7px;
         gap: 8px;
-        .colors-sku {
+        .img-showcase {
+          width: 308px;
+          margin: auto;
+        }
+        .colors-sku { 
           display: flex;
           gap: 8px;
           .color-option {
             width: 27px;
             height: 27px;
             border-radius: 4px;
+            outline: none;  
+          }
+          .color-option:focus {
+            border: 1px solid #353535
           }
         }
         .value-showcase {
@@ -46,32 +62,58 @@
         .name-showcase {
           font-size: 16px;
           line-height: 24px;
+          font-weight: 400;
+          @media(max-width: 767px) {
+            color: #353535;
+          }
         }
         .description-showcase {
           font-size: 12px;
           line-height: 18px;
-          height: 54px  ;
+          opacity: 0.5;
+          @media(min-width: 768px) {
+            height: 54px;
+          }
+          @media(max-width: 767px) {
+            color: #353535;
+            opacity: 1;
+          }
         }
         .cta-showcase {
-          width: 254px;
-          height: 35px;
-          border-radius: 4px;
-          background: #FAA500;
+          font-family: Titillium Web;
+          font-weight: 400;
           font-size: 16px;
           line-height: 24px;
           text-align: center;
           color: #FFFFFF;
           border: none;
+          width: 254px;
+          height: 35px;
+          border-radius: 4px;
+          background-color: #FAA500;
         }
+        @media(max-width: 1599px) {
+          .colors-sku, .value-showcase, .name-showcase, .description-showcase, .cta-showcase {
+            margin: auto;
+          }
+        }
+        @media(width: 360px) {
+          .colors-sku, .value-showcase, .name-showcase, .description-showcase, .cta-showcase {
+            margin-left: 27px;
+          }
+        }
+
       }
       .slick-arrow {
         z-index: 1;
+        height: 32px;
+        top: 269px;
       }
       .slick-prev {
-        left: 0;
+        left: 8px;
       }
       .slick-next {
-        right: 0;
+        right: 8px;
       }
     }
   }

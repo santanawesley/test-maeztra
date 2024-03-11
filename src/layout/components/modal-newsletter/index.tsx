@@ -9,9 +9,9 @@ const ModalNewsletter: React.FC<ModalNewsletterProps> = ({ closeModal }) => {
   return (
     <div className="wrapper-modal-newsletter">
       <div className="modal-newsletter">
-        <p onClick={closeModal} className="close-modal">
+        <button onClick={closeModal} className="close-modal">
           Fechar
-        </p>
+        </button>
         <div className="content-modal">
           <div className="img-modal">
             <img src={ImgNewsletter} alt="" />
@@ -31,7 +31,7 @@ const ModalNewsletter: React.FC<ModalNewsletterProps> = ({ closeModal }) => {
                 placeholder="Digite seu e-mail"
                 className="input-mail"
               />
-              <button type="button" className="cta-mail">
+              <button type="button" className="button-cta-mail">
                 Enviar
                 <img
                   src={IconSend}

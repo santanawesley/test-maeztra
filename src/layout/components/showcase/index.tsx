@@ -1,16 +1,30 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useMediaQuery } from "react-responsive";
 
 import { Img1Showcase, Img2Showcase } from "../../../assets";
 import "./showcase.scss";
 
 const Showcase = () => {
+  const breakOne = useMediaQuery({ maxWidth: 767 });
+  const breakTwo = useMediaQuery({ maxWidth: 1000 });
+  const breakThree = useMediaQuery({ maxWidth: 1300 });
+  const breakFour = useMediaQuery({ maxWidth: 1599 });
+
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: breakOne
+      ? 1
+      : breakTwo
+      ? 2
+      : breakThree
+      ? 3
+      : breakFour
+      ? 4
+      : 5,
     slidesToScroll: 1,
     arrows: true,
     prevArrow: (
@@ -112,7 +126,6 @@ const Showcase = () => {
         <h3 className="titulo-showcase">As Mais Pedidas</h3>
         <Slider {...settings}>
           {data.map((item) => {
-            console.log("item = ", item.value);
             return (
               <div key={item.id}>
                 <div className="card-showcase">
@@ -128,6 +141,7 @@ const Showcase = () => {
                           style={{ backgroundColor: color }}
                           className="color-option"
                           key={color}
+                          tabIndex={0}
                         />
                       );
                     })}

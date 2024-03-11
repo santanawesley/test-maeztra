@@ -15,6 +15,9 @@
       align-items: center;
       display: flex;
       justify-content: center;
+      @media(max-width: 480px) {
+        font-size: 10px;
+      }
     }
   }
   .wrapper-navigation-bar {
@@ -28,23 +31,60 @@
       max-width: 1600px;
       padding: 0 20px;
       box-sizing: border-box;
+      overflow: auto;
+      @media(max-width: 480px) {
+        padding: 0 16px;
+      }
       .navigation-first-section {
         display: flex;
+        align-items: center;
         gap: 93px;
+        @media(max-width: 1599px) {
+          flex: 1;
+          margin-right: 6%;
+          gap: 60px;
+        }
+        @media(max-width: 1200px) {
+          margin-right: 2%;
+          gap: 30px;
+        }
+        @media(max-width: 480px) {
+          gap: 15px;
+        }
+        .logo-header {
+          height: 18px;
+          @media(max-width: 480px) {
+            width: 110px;
+          }
+        }
+        .menu-drawer {
+          @media(min-width: 851px) {
+            display: none;
+          }
+        }
       }
       .navigation-second-section {
         display: flex;
         gap: 8px;
+        @media(max-width: 850px) {
+          display: none;
+        }
         .item-menu-navigation {
-          padding: 15px 15px 15px 17px;
-          box-sizing: border-box;
+          padding: 12px 14px 11px 17px;
           display: flex;
+          align-items: center;
           gap: 8px;
           cursor: pointer;
           border: 1px solid transparent;
           border-radius: 8px;
           text-decoration: none;
           outline-color: #FAA500;
+          @media(max-width: 1199px) {
+            padding: 12px 5px;
+          }
+          img {
+            height: 16px;
+          }
           p {
             width: -webkit-fill-available;
             font-family: Titillium Web;
@@ -57,6 +97,17 @@
             ;
           }
         }
+      }
+      .nav-second-section-mob {
+        display: flex;
+        gap: 31px;
+        @media(min-width: 851px) {
+          display: none;
+        }
+        .icon-nav-mob {
+          width: 32px;
+          height: 32px;
+        }  
       }
     }
   }

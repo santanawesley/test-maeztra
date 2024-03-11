@@ -2,12 +2,19 @@
   .slick-slider {
     .slick-arrow {
       z-index: 1;
+      height: 32px;
     }
     .slick-prev {
-      left: calc(50% - 500px);
+      left: calc(50% - 779px);
+      @media(max-width: 1599px) {
+        left: 28px;
+      }    
     }
     .slick-next {
-      right: calc(50% - 500px);
+      right: calc(50% - 779px);
+      @media(max-width: 1599px) {
+        right: 28px;
+      }    
     }
     .slick-list {
       font-family: "Montserrat", sans-serif;
@@ -17,32 +24,29 @@
       .slick-slide > div > div > div {
         position: relative;
       }
-      img {
+      .img-banner {
         width: 100%;
       }
-      h3 {
+      .title-banner {
         position: absolute;
-        // top: 151px; // Ideal na tela de 1600px
-        top: 100px;
+        top: 151px;
         font-weight: 700;
         font-size: 40px;
         line-height: 49px;
-        left: calc(50% - 400px);
+        left: 17%;
       }
-      p {
+      .sub-title-banner {
         position: absolute;
-        // top: 240px; // Ideal na tela de 1600px
-        top: 180px;
+        top: 240px;
         font-size: 20px;
         font-weight: 400;
         line-height: 24px;
         max-width: 465px;
-        left: calc(50% - 400px);
+        left: 17%;
       }
-      button {
+      .button-cta-banner {
         position: absolute;
-        // top: 320px; // Ideal na tela de 1600px
-        top: 260px;
+        top: 320px;
         width: 128px;
         height: 48px;
         padding: 14px 30px 14px 30px;
@@ -56,11 +60,96 @@
         text-align: left;
         color: #FFF;
         border: none;
-        left: calc(50% - 400px);
+        left: 17%;
       }
+      @media(max-width: 1500px) {
+        .title-banner {
+          max-width: 300px; 
+          top: 17%;
+        } 
+        .sub-title-banner {
+          max-width: 330px;
+          top: 40%;
+        }
+        .button-cta-banner {
+          top: 64%;
+        }
+      }
+      @media(max-width: 1350px) {
+        .sub-title-banner {
+          top: 45%;
+        }
+        .button-cta-banner {
+          top: 70%;
+        }
+      }
+      @media(max-width: 1199px) {
+        .title-banner {
+          font-size: 30px;
+          line-height: 36px;
+        }
+        .sub-title-banner, .button-cta-banner {
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+      @media(max-width: 767px) {
+        .title-banner {
+          font-size: 40px;
+          line-height: 49px;
+          top: 22%;
+        }
+        .sub-title-banner {
+          font-size: 20px;
+          line-height: 24px;
+        }
+        .button-cta-banner {
+          font-size: 16px;
+          line-height: 20px;
+          top: 63%;
+        }
+      }
+      @media(max-width: 550px) {
+        .title-banner {
+          font-size: 30px;
+          line-height: 36px;
+          top: 15%;
+          max-width: 220px;
+        }
+        .sub-title-banner {
+          max-width: 280px;
+        }
+        .sub-title-banner, .button-cta-banner {
+          font-size: 14px;
+          line-height: 17px;
+        }
+        .button-cta-banner {
+          top: 70%;
+          width: 76px;
+          height: 28px;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          border-radius: 4px;
+        }
+      }
+      @media(width: 360px) {
+        .title-banner {
+          top: 63px;
+          max-width: 220px;
+        }
+        .sub-title-banner {
+          top: 161px;
+          max-width: 235px;
+        }
+        .button-cta-banner {
+          top: 228px;
+        }
+      }
+
     }
     .slick-dots {
-      bottom: 75px;
+      bottom: 24px;
       li {
         margin: 0 8px;
         width: 16px;
@@ -71,6 +160,10 @@
         height: 16px;  
         border: 2px solid #FAA500;
         border-radius: 50%;
+        @media(max-width: 480px) {
+          width: 8px;
+          height: 8px;  
+        }
       }
       li.slick-active button {
         background-color: #FAA500;
@@ -81,6 +174,10 @@
         box-sizing: border-box;
         border-radius: 50%;
         content: "";
+        @media(max-width: 480px) {
+          width: 8px;
+          height: 8px;
+        }
       }
       li.slick-active button:before {
         font-size: 300px;

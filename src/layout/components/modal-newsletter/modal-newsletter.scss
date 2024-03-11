@@ -1,40 +1,60 @@
 .wrapper-modal-newsletter {
   background-color: #000000B2;
-  position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   position: fixed;
+  z-index: 9;
   .modal-newsletter {
     width: 851px;
     height: 558.25px;
-    // po: translate(50%);
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: transparent;
-    // padding: 20px;
-    // border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 9;
+    @media(max-width: 1599px) {
+      width: calc(100% - 40px);
+      max-width: 850px;
+      height: auto;
+    }
+    @media(max-width: 799px) {
+      max-width: 450px;
+    }
+    @media(width: 360px) {
+      width: calc(100% - 62px);
+    }
     .close-modal {
       font-family: Lato;
       font-size: 12px;
       line-height: 20px;
       letter-spacing: 0px;
-      text-align: right;
       color: #FFF;
       text-transform: uppercase;
-      padding-bottom: 6px;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      position: absolute;
+      right: 0;
+      top: -20px;
     }
     .content-modal {
       background-color: #FFF;
       display: flex;
+      height: 530px;
+      @media (max-width: 799px) {
+        padding: 20px;
+        height: auto;
+        min-height: 307px;
+      }
       .img-modal {
         img {
           height: 100%;
+        }
+        @media (max-width: 799px) {
+          display: none;
         }
       }
       .text-modal {
@@ -57,28 +77,14 @@
         .description-modal {
           font-family: Titillium Web;
           font-size: 20px;
-          font-weight: 700;
+          font-weight: 400;
           line-height: 23px;
           text-align: center;
           color: #787D83;
           padding-bottom: 25px;
-
-          // width: 258px
-
-          // font-family: Titillium Web;
-          // font-size: 16px;
-          // font-weight: 700;
-          // line-height: 23px;
-          // letter-spacing: 0px;
-          // text-align: center;
-
-          // font-family: Lato;
-          // font-size: 16px;
-          // font-weight: 700;
-          // line-height: 23px;
-          // letter-spacing: 0px;
-          // text-align: center;
-
+          @media(max-width: 480px) {
+            font-size: 16px;
+          }        
         }
         .hightligth-description {
           font-family: Titillium Web;
@@ -91,9 +97,8 @@
           gap: 12px;
         }
         .input-mail {
-          height: 42.37px;
+          height: 40px;
           width: 322px;
-          // height: 40px
           border-radius: 10px;
           border: 1px solid #C4C4C4;
           font-family: Titillium Web;
@@ -102,13 +107,14 @@
           line-height: 20px;
           text-align: left;
           color: #787D83;
-          padding: 13px;
+          padding: 10px 13px;
           box-sizing: border-box;
         }
-        .cta-mail {
+        .button-cta-mail {
           width: 322px;
           height: 40px;
           color: #FFF;
+          font-family: Titillium Web;
           font-size: 12px;
           font-weight: 700;
           line-height: 20px;
@@ -126,6 +132,11 @@
         .icon-send {
           width: 12px;
           height: 20px;
+        }
+        @media(max-width: 480px) {
+          .wrapper-send-info, .input-mail, .button-cta-mail {
+            width: 100%;
+          }
         }
       }
     }

@@ -7,8 +7,12 @@ const Search = () => {
 
   return (
     <div className="search">
-      <input type="search" placeholder="O Que Você Busca?" />
-      <button type="button" onClick={searchProduct}>
+      <input
+        type="search"
+        placeholder="O Que Você Busca?"
+        className="search-input"
+      />
+      <button type="button" onClick={searchProduct} className="search-button">
         Buscar
       </button>
     </div>

@@ -1,7 +1,11 @@
-import { ImgInfoCard } from "../../../assets";
+import { useMediaQuery } from "react-responsive";
+
+import { ImgInfoCard, ImgInfoCardMob } from "../../../assets";
 import "./banner-info-card.scss";
 
 const BannerInfoCard = () => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
   return (
     <div className="wrapper-banner-info-card">
       <div className="banner-info-card">
@@ -20,7 +24,10 @@ const BannerInfoCard = () => {
           </p>
         </div>
         <div className="img-info-card">
-          <img src={ImgInfoCard} alt="Foto coleção Outono-Inverno" />
+          <img
+            src={isMobile ? ImgInfoCardMob : ImgInfoCard}
+            alt="Foto coleção Outono-Inverno"
+          />
         </div>
       </div>
     </div>

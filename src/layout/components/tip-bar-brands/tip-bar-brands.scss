@@ -1,5 +1,8 @@
 .wrapper-tip-bar-brands {
-  padding: 0 20px 80px;
+  padding-bottom: 80px;
+  @media(max-width: 480px) {
+    padding-bottom: 41px;
+  }
   .tip-bar-brands {
     max-width: 1600px;
     margin: auto;
@@ -10,19 +13,46 @@
       font-family: Titillium Web;
       font-size: 32px;
       font-weight: 700;
-      line-height: 49px;
+      line-height: 36px;
       letter-spacing: 0em;
       text-align: center;
       color: #353535;
       padding-bottom: 24px;
+      @media(width: 360px) {
+        font-size: 24px;
+        line-height: 37px;
+      }
     }
     .imgs-bar-brands {
       display: flex;
       gap: 15px;
+      @media(max-width: 1599px) {
+        max-width: 100%;  
+        overflow: auto;
+        padding: 0 20px;
+        justify-content: left;
+      }
+      @media(max-width: 480px) {
+        overflow: auto;
+      }    
+      @media(max-width: 360px) {
+        padding: 0 31px;
+      }
     }
     .img-brand {
+      width: 308px;
+      height: 64px;
+      @media(max-width: 1599px) {
+        min-width: 308px;
+      }
+      @media(max-width: 360px) {
+        min-width: 298px;
+      }
       img {
         max-width: 100%;
+        @media(max-width: 480px) {
+          max-width: none;
+        }
       }
     }
   }

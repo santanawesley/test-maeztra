@@ -4,9 +4,12 @@ const MenuFooter = () => {
   return (
     <div className="wrapper-menu-footer">
       <div className="menu-footer">
-        <div className="columns-menu-footer first-column-menu-footer">
-          <h3 className="title-menu-footer">Informações</h3>
-          <nav>
+        <div className="columns-menu-footer category">
+          <div className="wrapper-title-menu-footer">
+            <h3 className="title-menu-footer">Informações</h3>
+            <button className="toggle-btn">+</button>
+          </div>
+          <nav className="links">
             <ul>
               <li>
                 <a href="#" className="item-menu-footer">
@@ -31,9 +34,12 @@ const MenuFooter = () => {
             </ul>
           </nav>
         </div>
-        <div className="columns-menu-footer">
-          <h3 className="title-menu-footer">Minha Conta</h3>
-          <nav>
+        <div className="columns-menu-footer category">
+          <div className="wrapper-title-menu-footer">
+            <h3 className="title-menu-footer">Minha Conta</h3>
+            <button className="toggle-btn">+</button>
+          </div>
+          <nav className="links">
             <ul>
               <li>
                 <a href="#" className="item-menu-footer">
@@ -53,9 +59,12 @@ const MenuFooter = () => {
             </ul>
           </nav>
         </div>
-        <div className="columns-menu-footer">
-          <h3 className="title-menu-footer">Onde nos Encontrar</h3>
-          <nav>
+        <div className="columns-menu-footer category">
+          <div className="wrapper-title-menu-footer">
+            <h3 className="title-menu-footer">Onde nos Encontrar</h3>
+            <button className="toggle-btn">+</button>
+          </div>
+          <nav className="links">
             <ul>
               <li>
                 <a href="#" className="item-menu-footer">

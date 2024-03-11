@@ -3,25 +3,36 @@
   letter-spacing: 0em;
   color: #353535;
   .tip-bar {
-    padding: 24px 20px 80px;
+    padding: 24px 0 74px;
     max-width: 1600px;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media(max-width: 767px) {
+      padding-bottom: 40px;
+    }
     .title-tip-bar {
       font-size: 16px;
       font-weight: 700;
       line-height: 24px;
       text-align: center;
-      padding-bottom: 16px;
+      padding-bottom: 21px;
     }
     .tips {
       display: flex;
       gap: 15px;
       margin: auto;
       justify-content: center;
-      max-width: 100%;
+      @media(max-width: 1599px) {
+        max-width: 100%;  
+        overflow: auto;
+        padding: 0 20px;
+        justify-content: left;
+      }
+      @media(max-width: 360px) {
+        padding: 0 31px;
+      }
       .tip-item {
         height: 64px;
         border-radius: 4px;
@@ -30,7 +41,13 @@
         display: flex;
         gap: 22px;
         align-items: center;
-        flex: 1;
+        width: 308px;
+        @media(max-width: 1599px) {
+          min-width: 308px;
+        }
+        @media(max-width: 360px) {
+          min-width: 298px;
+        }
         .tip-icon {
           width: 32px;
           height: 32px;

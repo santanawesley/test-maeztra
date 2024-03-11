@@ -6,12 +6,23 @@
     justify-content: space-between;
     max-width: 1600px;
     margin: auto;
-    padding: 0 20px;
     height: 85px;
     align-items: center;
+    @media(max-width: 1599px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media(max-width: 850px) {
+      flex-direction: column;
+      justify-content: space-around;
+      height: 233px;
+    }
     .social-medias, .payment-methods, .credits {
       gap: 22px;
       display: flex;
+      @media(max-width: 850px) {
+        gap: 24px;
+      }
     }
     .credits {
       font-family: Open Sans;
@@ -24,7 +35,7 @@
       .credits-item {
         display: flex;
         flex-direction: column;
-        gap: 3px;
+        gap: 4px;
       }
     }
   }

@@ -9,7 +9,6 @@ import { Newsletter } from "./components/newsletter";
 import { Showcase } from "./components/showcase";
 import { TipBar } from "./components/tip-bar";
 import { TipBarBrands } from "./components/tip-bar-brands";
-import "./app.scss";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
