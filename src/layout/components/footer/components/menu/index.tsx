@@ -1,7 +1,11 @@
 import { useState } from "react";
+import { useMediaQuery } from "react-responsive";
+
 import "./menu-footer.scss";
 
 const MenuFooter = () => {
+  const showMenu = useMediaQuery({ minWidth: 481 });
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(0);
 
@@ -28,7 +32,7 @@ const MenuFooter = () => {
               {menuOpen && selectedCategory === 1 ? "-" : "+"}
             </button>
           </div>
-          {menuOpen && selectedCategory === 1 && (
+          {((menuOpen && selectedCategory === 1) || showMenu) && (
             <nav className="links">
               <ul>
                 <li>
@@ -65,7 +69,7 @@ const MenuFooter = () => {
               {menuOpen && selectedCategory === 2 ? "-" : "+"}
             </button>
           </div>
-          {menuOpen && selectedCategory === 2 && (
+          {((menuOpen && selectedCategory === 2) || showMenu) && (
             <nav className="links">
               <ul>
                 <li>
@@ -97,7 +101,7 @@ const MenuFooter = () => {
               {menuOpen && selectedCategory === 3 ? "-" : "+"}
             </button>
           </div>
-          {menuOpen && selectedCategory === 3 && (
+          {((menuOpen && selectedCategory === 3) || showMenu) && (
             <nav className="links">
               <ul>
                 <li>
