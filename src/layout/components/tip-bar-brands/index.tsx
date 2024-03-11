@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   LogoAnnTaylor,
   LogoComma,
@@ -6,8 +7,14 @@ import {
   LogoZara,
 } from "../../../assets";
 import "./tip-bar-brands.scss";
+import { touch } from "../../utils/touch";
 
 const TipBarBrands = () => {
+  useEffect(() => {
+    const categoriaContainer = document.querySelector(".imgs-bar-brands");
+    touch(categoriaContainer as HTMLDivElement);
+  }, []);
+
   return (
     <div className="wrapper-tip-bar-brands">
       <div className="tip-bar-brands">

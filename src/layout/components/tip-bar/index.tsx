@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   IconDiscount,
   IconExchanges,
@@ -6,8 +7,14 @@ import {
   IconTruck,
 } from "../../../assets";
 import "./tip-bar.scss";
+import { touch } from "../../utils/touch";
 
 const TipBar = () => {
+  useEffect(() => {
+    const tips = document.querySelector(".tips");
+    touch(tips as HTMLDivElement);
+  }, []);
+
   return (
     <div className="wrapper-tip-bar">
       <div className="tip-bar">
